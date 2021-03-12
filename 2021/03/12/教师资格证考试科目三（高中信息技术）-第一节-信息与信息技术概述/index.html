@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"snowing.design","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="（对应的思维导图附在文末） 信息与信息技术概述信息的定义和表示 信息就是通过语言、文字、图形&#x2F;像、声视频等传播的内容。 信息 不等于 消息信息是消息的内核，消息是信息的外壳   信息 不等于 知识信息不是某种信号，知识是加工提炼后的信息   数据（字母、数字符号、语音、图形&#x2F;图像）是信息的载体   信息的基本特征 普遍性  时效性  依附性（载体性）  价值性  共享性  真伪性   信息的分类">
+<meta property="og:type" content="article">
+<meta property="og:title" content="教师资格证考试科目三（高中信息技术）- 第一节 信息与信息技术概述">
+<meta property="og:url" content="https://snowing.design/2021/03/12/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81%E8%80%83%E8%AF%95%E7%A7%91%E7%9B%AE%E4%B8%89%EF%BC%88%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%EF%BC%89-%E7%AC%AC%E4%B8%80%E8%8A%82-%E4%BF%A1%E6%81%AF%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0/index.html">
+<meta property="og:site_name" content="Qingyi&#39;s Blog">
+<meta property="og:description" content="（对应的思维导图附在文末） 信息与信息技术概述信息的定义和表示 信息就是通过语言、文字、图形&#x2F;像、声视频等传播的内容。 信息 不等于 消息信息是消息的内核，消息是信息的外壳   信息 不等于 知识信息不是某种信号，知识是加工提炼后的信息   数据（字母、数字符号、语音、图形&#x2F;图像）是信息的载体   信息的基本特征 普遍性  时效性  依附性（载体性）  价值性  共享性  真伪性   信息的分类">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://snowing.design/2021/03/12/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81%E8%80%83%E8%AF%95%E7%A7%91%E7%9B%AE%E4%B8%89%EF%BC%88%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%EF%BC%89-%E7%AC%AC%E4%B8%80%E8%8A%82-%E4%BF%A1%E6%81%AF%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0/1%20%E4%BF%A1%E6%81%AF%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0.png">
+<meta property="article:published_time" content="2021-03-12T14:05:36.000Z">
+<meta property="article:modified_time" content="2021-03-12T14:12:55.482Z">
+<meta property="article:author" content="Qingyi">
+<meta property="article:tag" content="教师资格证">
+<meta property="article:tag" content="高中信息技术">
+<meta property="article:tag" content="信息与信息技术概述">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://snowing.design/2021/03/12/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81%E8%80%83%E8%AF%95%E7%A7%91%E7%9B%AE%E4%B8%89%EF%BC%88%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%EF%BC%89-%E7%AC%AC%E4%B8%80%E8%8A%82-%E4%BF%A1%E6%81%AF%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0/1%20%E4%BF%A1%E6%81%AF%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0.png">
+
+<link rel="canonical" href="https://snowing.design/2021/03/12/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81%E8%80%83%E8%AF%95%E7%A7%91%E7%9B%AE%E4%B8%89%EF%BC%88%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%EF%BC%89-%E7%AC%AC%E4%B8%80%E8%8A%82-%E4%BF%A1%E6%81%AF%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>教师资格证考试科目三（高中信息技术）- 第一节 信息与信息技术概述 | Qingyi's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband">
+		<a target="_blank" rel="noopener" href="https://github.com/IambecauseIthink" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+	</div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Qingyi's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">16</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">6</span></a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://snowing.design/2021/03/12/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81%E8%80%83%E8%AF%95%E7%A7%91%E7%9B%AE%E4%B8%89%EF%BC%88%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%EF%BC%89-%E7%AC%AC%E4%B8%80%E8%8A%82-%E4%BF%A1%E6%81%AF%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Qingyi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Qingyi's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          教师资格证考试科目三（高中信息技术）- 第一节 信息与信息技术概述
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-03-12 22:05:36 / 修改时间：22:12:55" itemprop="dateCreated datePublished" datetime="2021-03-12T22:05:36+08:00">2021-03-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81%E8%80%83%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">教师资格证考试</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>（对应的思维导图附在文末）</p>
+<h2 id="信息与信息技术概述"><a href="#信息与信息技术概述" class="headerlink" title="信息与信息技术概述"></a>信息与信息技术概述</h2><h3 id="信息的定义和表示"><a href="#信息的定义和表示" class="headerlink" title="信息的定义和表示"></a>信息的定义和表示</h3><ul>
+<li><p>信息就是通过语言、文字、图形/像、声视频等传播的内容。</p>
+<p>信息 不等于 消息<br>信息是消息的内核，消息是信息的外壳  </p>
+<p>信息 不等于 知识<br>信息不是某种信号，知识是加工提炼后的信息  </p>
+<p>数据（字母、数字符号、语音、图形/图像）是信息的载体</p>
+</li>
+</ul>
+<h3 id="信息的基本特征"><a href="#信息的基本特征" class="headerlink" title="信息的基本特征"></a>信息的基本特征</h3><ul>
+<li><p>普遍性</p>
+</li>
+<li><p>时效性</p>
+</li>
+<li><p>依附性（载体性）</p>
+</li>
+<li><p>价值性</p>
+</li>
+<li><p>共享性</p>
+</li>
+<li><p>真伪性</p>
+</li>
+</ul>
+<h3 id="信息的分类"><a href="#信息的分类" class="headerlink" title="信息的分类"></a>信息的分类</h3><ul>
+<li><p>按信息的加工顺序</p>
+<ul>
+<li><p>一次性性</p>
+<ul>
+<li>原始信息</li>
+</ul>
+</li>
+<li><p>二次信息</p>
+<ul>
+<li>加上节目制作</li>
+</ul>
+</li>
+<li><p>三次信息</p>
+<ul>
+<li>加上评论</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>按信息的应用领域</p>
+<ul>
+<li><p>管理信息</p>
+</li>
+<li><p>社会信息</p>
+</li>
+<li><p>军事信息</p>
+</li>
+<li><p>文教信息</p>
+</li>
+<li><p>经济信息</p>
+</li>
+<li><p>科技信息等</p>
+</li>
+</ul>
+</li>
+<li><p>按信息的反映形式</p>
+<ul>
+<li><p>数字信息</p>
+</li>
+<li><p>图像信息</p>
+</li>
+<li><p>声音信息</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="信息技术的发展与应用"><a href="#信息技术的发展与应用" class="headerlink" title="信息技术的发展与应用"></a>信息技术的发展与应用</h2><h3 id="信息技术的含义"><a href="#信息技术的含义" class="headerlink" title="信息技术的含义"></a>信息技术的含义</h3><ul>
+<li>信息技术是指能扩展人的信息器官的功能，完成信息的获取、传递、加工、再生和使用等功能等一类技术。</li>
+</ul>
+<h3 id="信息技术的“四基元”"><a href="#信息技术的“四基元”" class="headerlink" title="信息技术的“四基元”"></a>信息技术的“四基元”</h3><ul>
+<li><p>感测技术</p>
+<ul>
+<li>感觉器官功能的延长</li>
+</ul>
+</li>
+<li><p>通信技术</p>
+<ul>
+<li>产道神经网络功能的延长</li>
+</ul>
+</li>
+<li><p>计算机和智能技术</p>
+<ul>
+<li>思维器官功能的延长</li>
+</ul>
+</li>
+<li><p>控制技术</p>
+<ul>
+<li>效应器官功能的延长</li>
+</ul>
+</li>
+<li><p>信息技术“四基元”和谐有机地合作，共同完成扩展人的智力功能的任务。</p>
+</li>
+</ul>
+<h3 id="信息技术的发展"><a href="#信息技术的发展" class="headerlink" title="信息技术的发展"></a>信息技术的发展</h3><ul>
+<li><p>第一次信息技术革命</p>
+<ul>
+<li><p>语言的使用</p>
+<ul>
+<li>从猿进化到人的重要标志</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>第二次信息技术革命</p>
+<ul>
+<li><p>文字的创造</p>
+<ul>
+<li>信息的存储首次超越了时间和地域的限制</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>第三次信息技术革命</p>
+<ul>
+<li><p>印刷的发明</p>
+<ul>
+<li>为知识的积累和传播提供了更为可靠的保证</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>第四次信息技术革命</p>
+<ul>
+<li>电报、电话、广播的发明和普及应用</li>
+</ul>
+</li>
+<li><p>第五次信息技术革命</p>
+<ul>
+<li><p>电子计算机的普及应用及计算机与现代通信技术的有机结合</p>
+<ul>
+<li>将人类社会推到了数字化时代</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="数制与信息编码"><a href="#数制与信息编码" class="headerlink" title="数制与信息编码"></a>数制与信息编码</h2><h3 id="数制的基本概念"><a href="#数制的基本概念" class="headerlink" title="数制的基本概念"></a>数制的基本概念</h3><p>会计算</p>
+<ul>
+<li><p>数制也称计数制，用一组固定的符号和统一的规则来表示数值的方法。通常的数制都采用进位计数制。</p>
+<ul>
+<li><p>数码</p>
+<ul>
+<li>eg 十进制，数码为0～9</li>
+</ul>
+</li>
+<li><p>基数</p>
+<ul>
+<li><p>数码的个数</p>
+<ul>
+<li>eg 十进制，基数为10</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>位权</p>
+<ul>
+<li><p>数码的权重</p>
+<ul>
+<li>eg 十进制123.4，<br>1 - 2；<br>2 - 1；<br>3 - 0；<br>4 - -1</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="不同进制之间的转换"><a href="#不同进制之间的转换" class="headerlink" title="不同进制之间的转换"></a>不同进制之间的转换</h3><p>会计算</p>
+<h3 id="计算机中字符的编码"><a href="#计算机中字符的编码" class="headerlink" title="计算机中字符的编码"></a>计算机中字符的编码</h3><ul>
+<li><p>西文字符的编码</p>
+<ul>
+<li><p>ASCII码</p>
+<ul>
+<li><p>美国标准信息交换码</p>
+</li>
+<li><p>由7位二进制数组成，可表示128种字符（实际占用8个二进制位，最高位补0）</p>
+</li>
+<li><p>控制字符：前32个字符+空格+Del</p>
+</li>
+<li><p>图形字符：可显示和打印（94个）</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>汉字的编码</p>
+<ul>
+<li><p>汉字输入码</p>
+<ul>
+<li><p>数字编码</p>
+</li>
+<li><p>字音编码</p>
+</li>
+<li><p>字形编码</p>
+</li>
+<li><p>音形编码</p>
+</li>
+</ul>
+</li>
+<li><p>国标码</p>
+<ul>
+<li><p>以国家标准局公布的GB2312-80规定的汉字交换码作为标准进行编码</p>
+<ul>
+<li><p>国标码（7445）</p>
+<ul>
+<li><p>汉字（6763个）</p>
+<ul>
+<li><p>一级汉字（3755个）</p>
+</li>
+<li><p>二级汉字（3008个）</p>
+</li>
+</ul>
+</li>
+<li><p>字符符号（682个）</p>
+</li>
+</ul>
+</li>
+<li><p>全部国标码种的字符划分为94（（区）*94（位），每个字符由区号和位号来确定，即区位码。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>汉字内码</p>
+<ul>
+<li><p>是汉字在计算机内部存储、处理和传输用的信息代码</p>
+</li>
+<li><p>将国标码的美国字节加80H</p>
+</li>
+</ul>
+</li>
+<li><p>汉字字形码</p>
+<ul>
+<li><p>点阵字形</p>
+<ul>
+<li>不论汉字的笔划多少，都可在同样大小的方块中写出，从而把方块分割成许多小方块，组成一个点阵，每个小方块就是二进制的一个位。</li>
+</ul>
+</li>
+<li><p>矢量字形</p>
+<ul>
+<li>存储是描述汉字字形的轮廓特征，当要输出汉字时，通过计算机的计算，有汉字字型描述生成所需大小以及形状的汉字点阵。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>汉字地址码</p>
+<ul>
+<li>汉字字库中存储汉字字形信息的逻辑地址码。以简化内码到地址码的转换。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>二维码</p>
+<ul>
+<li><p>是用特定的集合图形按照一定规律在平面（二维方向）上分布的黑白相间的图形。</p>
+<ul>
+<li><p>优点</p>
+<ul>
+<li><p>高密度编码，信息容量大</p>
+</li>
+<li><p>编码范围广</p>
+</li>
+<li><p>容错能力强，具有纠错功能</p>
+</li>
+<li><p>译码可靠性高</p>
+</li>
+<li><p>可引入加密措施</p>
+</li>
+<li><p>成本低，易制作，持久耐用</p>
+</li>
+<li><p>条码符号形状，尺寸大小比例可变</p>
+</li>
+<li><p>可使用激光或CCD阅读器识别</p>
+</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li>成为手机病毒、钓鱼网站传播的新渠道。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="信息的传递与获取"><a href="#信息的传递与获取" class="headerlink" title="信息的传递与获取"></a>信息的传递与获取</h2><h3 id="信息的传递"><a href="#信息的传递" class="headerlink" title="信息的传递"></a>信息的传递</h3><ul>
+<li>信源 -&gt; 编码 -&gt; 调制 -&gt; 信道  -&gt; 解调 -&gt; 解码 -&gt; 信宿</li>
+</ul>
+<h3 id="信息的获取"><a href="#信息的获取" class="headerlink" title="信息的获取"></a>信息的获取</h3><ul>
+<li><p>确定成果目标形式以及所需载体信息、列出信息需求清单</p>
+</li>
+<li><p>选择信息来源</p>
+</li>
+<li><p>确定信息获取的方式并获取信息</p>
+<ul>
+<li><p>采集信息的方法</p>
+</li>
+<li><p>采集信息的工具</p>
+</li>
+</ul>
+</li>
+<li><p>保存信息</p>
+<ul>
+<li><p>整理信息、分类保存</p>
+</li>
+<li><p>输入计算机保存</p>
+</li>
+</ul>
+</li>
+<li><p>评价信息</p>
+</li>
+<li><p>反馈信息</p>
+</li>
+</ul>
+<h2 id="信息活动的法规"><a href="#信息活动的法规" class="headerlink" title="信息活动的法规"></a>信息活动的法规</h2><h3 id="信息危机"><a href="#信息危机" class="headerlink" title="信息危机"></a>信息危机</h3><ul>
+<li><p>目前面临的信息危机</p>
+<ul>
+<li><p>信息安全</p>
+</li>
+<li><p>信息滥用</p>
+</li>
+<li><p>信息污染</p>
+</li>
+</ul>
+</li>
+<li><p>计算机病毒及防治</p>
+<ul>
+<li><p>计算机病毒</p>
+<ul>
+<li>编制或者在计算机程序中插入的破坏计算机功能或者数据，影响计算机使用并且能够自我复制的一组计算机指令或者程序代码</li>
+</ul>
+</li>
+<li><p>计算机病毒的特点</p>
+<ul>
+<li><p>破坏性</p>
+</li>
+<li><p>传染性</p>
+</li>
+<li><p>潜伏性</p>
+</li>
+<li><p>不可预见性</p>
+</li>
+<li><p>寄生性</p>
+</li>
+</ul>
+</li>
+<li><p>计算机病毒的主要传播路径</p>
+<ul>
+<li><p>网络</p>
+</li>
+<li><p>移动存储设备</p>
+</li>
+<li><p>盗版光盘等</p>
+</li>
+</ul>
+</li>
+<li><p>计算机病毒等防治</p>
+<ul>
+<li><p>安装正版杀毒软件，且经常更新</p>
+</li>
+<li><p>重要文件进行经常性的备份</p>
+</li>
+<li><p>建议良好的安全习惯</p>
+</li>
+<li><p>不轻易使用来历不明的光盘和移动硬盘磁盘等，使用前先杀毒处理</p>
+</li>
+<li><p>发现病毒或异常时，迅速隔离</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>计算机黑客问题</p>
+<ul>
+<li><p>黑客</p>
+<ul>
+<li>利用不正当手段窃取计算机网络系统等口令和密码，非法进入计算机网络等人</li>
+</ul>
+</li>
+<li><p>黑客常用的攻击手段</p>
+<ul>
+<li><p>后门程序</p>
+</li>
+<li><p>信息炸弹</p>
+</li>
+<li><p>拒绝服务攻击</p>
+</li>
+<li><p>网络窃听</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>计算机知识产权问题</p>
+<ul>
+<li><p>知识产权</p>
+<ul>
+<li><p>组成部分</p>
+<ul>
+<li><p>著作权</p>
+</li>
+<li><p>工业产权</p>
+</li>
+</ul>
+</li>
+<li><p>主要特点</p>
+<ul>
+<li>专有性</li>
+</ul>
+</li>
+<li><p>主要规约</p>
+<ul>
+<li><p>国内外著作权法</p>
+<ul>
+<li><p>《中华人民共和国著作权法》（1990）</p>
+</li>
+<li><p>《计算机软件保护条例》（2001）</p>
+</li>
+<li><p>《中华人民共和国著作权法实施条例》（2002）</p>
+</li>
+</ul>
+</li>
+<li><p>国际条例和协议</p>
+<ul>
+<li><p>《伯尔尼公约》</p>
+</li>
+<li><p>《世界版权公约》（《日内网公约》）</p>
+</li>
+<li><p>《TRIPS协议》</p>
+</li>
+<li><p>《WIPO版权协议》</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>计算机使用的道德规范</p>
+<ul>
+<li><p>尊重并维护个人隐私信息</p>
+</li>
+<li><p>使用合法软件</p>
+</li>
+<li><p>遵守相关法律</p>
+</li>
+</ul>
+</li>
+<li><p>中小学信息伦理道德与网络使用规范</p>
+<ul>
+<li><p>信息伦理道德</p>
+</li>
+<li><p>中小学信息伦理道德教育的内容</p>
+<ul>
+<li><p>为集体、祖国与人类社会造福</p>
+</li>
+<li><p>遵守信息法律法规</p>
+</li>
+<li><p>抵制不良信息</p>
+</li>
+<li><p>批评与抵制不道德的信息行为</p>
+</li>
+<li><p>不损害他人利益</p>
+</li>
+<li><p>不随意发布信息</p>
+</li>
+<li><p>培养合理合作精神</p>
+</li>
+<li><p>倡导道德自律</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="法律法规"><a href="#法律法规" class="headerlink" title="法律法规"></a>法律法规</h3><ul>
+<li><p>中华人民共和国刑法</p>
+<ul>
+<li><p>285条：侵入国家事务、国防建设、尖端科学技术领域的计算机信息系统</p>
+</li>
+<li><p>286条：对九三斤信息系统以及其中的数据程序进行改、增、删、干扰</p>
+</li>
+<li><p>287条：利用计算机实施金融诈骗、盗窃、窃取信息、贪污和挪用公款等</p>
+</li>
+</ul>
+</li>
+<li><p>计算计软件保护条例</p>
+<ul>
+<li><p>23条：软件著作权（合法享有）</p>
+</li>
+<li><p>24条：典型的侵权行为</p>
+</li>
+</ul>
+</li>
+<li><p>全国人民代表大会常务委员会关于维护互联网安全的决定</p>
+<ul>
+<li>利用互联网造谣、诽谤或者发表、传播其他有害信息，煽动颠覆国家政权、推翻社会主义制度，或者煽动分裂国家，破坏国家统一</li>
+</ul>
+<img src="/2021/03/12/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81%E8%80%83%E8%AF%95%E7%A7%91%E7%9B%AE%E4%B8%89%EF%BC%88%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%EF%BC%89-%E7%AC%AC%E4%B8%80%E8%8A%82-%E4%BF%A1%E6%81%AF%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0/1%20%E4%BF%A1%E6%81%AF%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0.png" class="" title="思维导图"> </li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>给作者加油一下呗~</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏~
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Qingyi 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Qingyi 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81/" rel="tag"><i class="fa fa-tag"></i> 教师资格证</a>
+              <a href="/tags/%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/" rel="tag"><i class="fa fa-tag"></i> 高中信息技术</a>
+              <a href="/tags/%E4%BF%A1%E6%81%AF%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0/" rel="tag"><i class="fa fa-tag"></i> 信息与信息技术概述</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/03/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E6%8E%A8%E8%8D%90/" rel="prev" title="机器学习资料推荐">
+      <i class="fa fa-chevron-left"></i> 机器学习资料推荐
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/03/12/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81%E8%80%83%E8%AF%95%E7%A7%91%E7%9B%AE%E4%B8%89%EF%BC%88%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%EF%BC%89-%E7%AC%AC%E4%BA%8C%E8%8A%82-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8F%8A%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0/" rel="next" title="教师资格证考试科目三（高中信息技术）- 第二节 计算机及网络概述">
+      教师资格证考试科目三（高中信息技术）- 第二节 计算机及网络概述 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">信息与信息技术概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E8%A1%A8%E7%A4%BA"><span class="nav-number">1.1.</span> <span class="nav-text">信息的定义和表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%89%B9%E5%BE%81"><span class="nav-number">1.2.</span> <span class="nav-text">信息的基本特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E7%9A%84%E5%88%86%E7%B1%BB"><span class="nav-number">1.3.</span> <span class="nav-text">信息的分类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E7%9A%84%E5%8F%91%E5%B1%95%E4%B8%8E%E5%BA%94%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">信息技术的发展与应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E7%9A%84%E5%90%AB%E4%B9%89"><span class="nav-number">2.1.</span> <span class="nav-text">信息技术的含义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E7%9A%84%E2%80%9C%E5%9B%9B%E5%9F%BA%E5%85%83%E2%80%9D"><span class="nav-number">2.2.</span> <span class="nav-text">信息技术的“四基元”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E7%9A%84%E5%8F%91%E5%B1%95"><span class="nav-number">2.3.</span> <span class="nav-text">信息技术的发展</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%88%B6%E4%B8%8E%E4%BF%A1%E6%81%AF%E7%BC%96%E7%A0%81"><span class="nav-number">3.</span> <span class="nav-text">数制与信息编码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%88%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">3.1.</span> <span class="nav-text">数制的基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8D%E5%90%8C%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="nav-number">3.2.</span> <span class="nav-text">不同进制之间的转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E5%AD%97%E7%AC%A6%E7%9A%84%E7%BC%96%E7%A0%81"><span class="nav-number">3.3.</span> <span class="nav-text">计算机中字符的编码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E7%9A%84%E4%BC%A0%E9%80%92%E4%B8%8E%E8%8E%B7%E5%8F%96"><span class="nav-number">4.</span> <span class="nav-text">信息的传递与获取</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E7%9A%84%E4%BC%A0%E9%80%92"><span class="nav-number">4.1.</span> <span class="nav-text">信息的传递</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E7%9A%84%E8%8E%B7%E5%8F%96"><span class="nav-number">4.2.</span> <span class="nav-text">信息的获取</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E6%B4%BB%E5%8A%A8%E7%9A%84%E6%B3%95%E8%A7%84"><span class="nav-number">5.</span> <span class="nav-text">信息活动的法规</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E5%8D%B1%E6%9C%BA"><span class="nav-number">5.1.</span> <span class="nav-text">信息危机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%95%E5%BE%8B%E6%B3%95%E8%A7%84"><span class="nav-number">5.2.</span> <span class="nav-text">法律法规</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Qingyi</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://leongo.cn/" title="https:&#x2F;&#x2F;leongo.cn" rel="noopener" target="_blank">💖</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Qingyi</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://snowing.design/2021/03/12/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81%E8%80%83%E8%AF%95%E7%A7%91%E7%9B%AE%E4%B8%89%EF%BC%88%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%EF%BC%89-%E7%AC%AC%E4%B8%80%E8%8A%82-%E4%BF%A1%E6%81%AF%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0/',]
+      });
+      });
+  </script>
+
+</body>
+</html>
